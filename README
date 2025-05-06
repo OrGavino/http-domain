@@ -1,0 +1,12 @@
+Description:
+
+Simple Python script that request the HTML status (or can be the HTML code from the page), from a list of domains in .txt, it also measure the time to run it. 
+
+📌 Features
+
+- Reads domains from a file called domains_list.txt
+- Performs HTTP requests using the requests library
+- Handles exceptions to manage connection and SSL errors
+- Defines a timeout for requests to avoid being stuck on slow domains.
+- Measures total execution time of the script.
+

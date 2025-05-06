@@ -15,7 +15,7 @@ for site in lista:
     #system(f"ping -c 1 {site}")
     
     try:
-        html = requests.get(f'https://{site}', timeout=5)
+        html = requests.get(f'https://{site}', timeout=2)
         print(site, html)
     except requests.exceptions.RequestException as e:
         print(f"Erro no {site}: {e}")
