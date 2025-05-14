@@ -1,11 +1,16 @@
+About:
+
+This project was made to analyze the difference in time and the code itself between a python script and a bash script, iterating the requests over a 1001 domain list took on avarage 24 minutes in the python version, while the bash required 9 and a half minutes on avarage
+
 Description:
 
-Simple Python script that request the HTML status (or can be the HTML code from the page), from a list of domains in .txt, it also measure the time to run it. 
+A simple Python script that performs HTTP requests to retrieve either the HTML status code or the full HTML content from a list of domains stored in a .txt file. It also measures the total execution time.
+Additionally, a Bash script is included to perform the same operation using curl instead of the Python requests library.
 
 📌 Features
 
 - Reads domains from a file called domains_list.txt
-- Performs HTTP requests using the requests library
+- Performs HTTP requests using the requests library (Python) or curl(Bash)
 - Handles exceptions to manage connection and SSL errors
 - Defines a timeout for requests to avoid being stuck on slow domains.
 - Measures total execution time of the script.

@@ -2,7 +2,6 @@
 
 import requests
 import time 
-from os import system
 
 start_time = time.time()
 fails = []
@@ -12,7 +11,6 @@ with open('domains_list.txt', 'r') as lista:
 
 for site in lista:
     site = site.strip() #sem o strip fica dando erro de %0a no dominio por causa do \n 
-    #system(f"ping -c 1 {site}")
     
     try:
         html = requests.get(f'https://{site}', timeout=2)
